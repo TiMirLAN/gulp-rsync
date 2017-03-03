@@ -45,7 +45,7 @@ module.exports = function(options) {
     }
 
     sources.push(file);
-    cb(null, file);
+    cb();
   }, function(cb) {
     sources = sources.filter(function(source) {
       return !source.isNull() ||
